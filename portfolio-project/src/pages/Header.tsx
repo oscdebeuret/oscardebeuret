@@ -1,4 +1,3 @@
-import './Header.css'
 import WavingHandSVG from '../assets/waving-hand.webp';
 
 function Header() {

@@ -10,6 +10,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  width: 100%;
 
   color-scheme: light;
   background-color: #ffffff;
@@ -28,6 +29,8 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Fonts  */
+
 .lexend-giga {
   font-family: "Lexend Giga", sans-serif;
   font-weight: 800;
@@ -40,6 +43,8 @@ body {
 .poppins {
   font-family: "Poppins";
 }
+
+/* Titles */
 
 .underline-violet {
   border-radius: 7px;
@@ -72,6 +77,33 @@ h1 {
   z-index: -1;
 }
 
+.title {
+  transition: letter-spacing 0.3s ease;
+}
+
+/* Containers */
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-image: radial-gradient(circle at top left, rgba(151, 71, 255, 0.4) 0%, transparent 400px), radial-gradient(circle at bottom right, rgba(0, 153, 153, 0.4) 0%, transparent 400px);
+}
+
+.article-section {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gradient-blue {
+  background-image: radial-gradient(circle at top right, rgba(0, 153, 153, 0.4) 0%, transparent 400px);
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -82,10 +114,20 @@ h1 {
   height: 50vh;
 }
 
-.photo {
-  width: auto;
+/* Layout */
+
+nav {
+  background: transparent;
+  transition: background-color 0.3s ease;
 }
 
-.title {
-  transition: letter-spacing 0.3s ease;
+footer {
+  background-color: #ecf1fd;
+}
+
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }

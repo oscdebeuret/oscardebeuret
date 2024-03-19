@@ -1,4 +1,3 @@
-import './Layout.css'
 import PhotoProfil from '../assets/photo.webp'
 import { useEffect } from 'react';
 
