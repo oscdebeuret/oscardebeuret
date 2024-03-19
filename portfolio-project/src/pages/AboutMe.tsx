@@ -4,8 +4,6 @@ import Ub from '../assets/ub.webp'
 import Daguin from '../assets/daguin.webp'
 import Bewease from '../assets/bewease.webp'
 
-import Squares from '../components/Squares';
-
 function AboutMe() {
     return (
         <>
