@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,61 +22,63 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-
-  background-color: #ffffff; /* Fond blanc */
-  background-image: radial-gradient(circle at top left, rgba(151, 71, 255, 0.4) 0%, transparent 400px), radial-gradient(circle at bottom right, rgba(0, 153, 153, 0.4) 0%, transparent 400px);
-  background-repeat: no-repeat;
 }
 
-/*
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.lexend-giga {
+  font-family: "Lexend Giga", sans-serif;
+  font-weight: 800;
+  letter-spacing: -10px;
 }
-a:hover {
-  color: #535bf2;
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.underline-violet {
+  border-radius: 7px;
+  background-color: rgba(151, 71, 255, 0.2);
+  background-size: 200%;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -5px;
+  position: relative;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.underline-purple {
+  position: relative;
+  display: inline-block;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.underline-purple::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(151, 71, 255, 0.2);
+  border-radius: 5px;
+  z-index: -1;
 }
-*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 150vh;
+  height: 50vh;
+}

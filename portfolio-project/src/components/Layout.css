@@ -1,0 +1,15 @@
+nav {
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #ecf1fd;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
