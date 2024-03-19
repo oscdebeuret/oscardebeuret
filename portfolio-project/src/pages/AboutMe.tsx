@@ -6,7 +6,7 @@ import Bewease from '../assets/bewease.webp'
 function AboutMe() {
     return (
         <>
-            <div className="article-section gradient-blue">
+            <div className="article-section gradient-blue-tr">
                 <h1 className="underline-purple mb-10" id="pres">Présentation</h1>
                 <div className="flex flex-row w-7/12 justify-between">
                     <div className="flex flex-col w-8/12 border-2 p-5 py-7 rounded-3xl pe-12">

@@ -1,6 +1,6 @@
 import WavingHandSVG from '../assets/waving-hand.webp';
 
-function Header() {
+function Hero() {
     return (
         <>
             <div className="hero-section flex items-center">
@@ -20,4 +20,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Hero
