@@ -3,6 +3,7 @@ import Layout from './pages/Layout';
 import Hero from './pages/Hero';
 import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 function App() {
 
@@ -11,8 +12,8 @@ function App() {
       <Layout>
         <Hero></Hero>
         <AboutMe></AboutMe>
-        <br></br>
         <Projects></Projects>
+        <Skills></Skills>
       </Layout>
     </>
   )

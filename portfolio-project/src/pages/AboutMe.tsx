@@ -67,7 +67,7 @@ const Formation = () => {
     return (
         <>
             <div className="flex flex-col w-7/12 text-left">
-                <h3 className="lexend-giga text-2xl tracking-[-3px] tracking-tighter mb-10">Formation</h3>
+                <h3 className="lexend-giga text-2xl tracking-[-3px] tracking-tighter mb-12">Formation</h3>
                 <div className="flex flex-row">
                     <div className="flex flex-col">
                         <div className="flex w-24 h-24 border-2 rounded-[15px] items-center justify-center">
