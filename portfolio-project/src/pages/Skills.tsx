@@ -55,6 +55,9 @@ function Skills() {
                         <TileSkill text="React" color="EB9BC1"></TileSkill>
                         <TileSkill text="Vite" color="EB9BC1"></TileSkill>
                     </div>
+                    <div className="flex flex-row w-full justify-center">
+                        <TileSkill text="Cypress (E2E tests)" color="EB9BC1"></TileSkill>
+                    </div>
                 </div>
 
                 <p className="lexend-giga font-bold text-[20px] tracking-tighter mt-10 mb-5">
