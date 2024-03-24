@@ -79,7 +79,7 @@ function Projects() {
                         <Tile text="API Spotify" color="#4CB944"></Tile>
                         <Tile text="UX/UI Design" color="#EB9BC1"></Tile>
                     </CardM>
-                    <CardM image={Netfloux} title="Netfloux" text="Applicaton web de geston de séries. Projet d’équipe.">
+                    <CardM image={Netfloux} title="Netfloux" text="Applicaton web de gestion de séries. Projet d’équipe.">
                         <Tile text="Symfony" color="#4271E9"></Tile>
                         <Tile text="PHP" color="#4271E9"></Tile>
                         <Tile text="Figma" color="#9747FF"></Tile>
