@@ -42,7 +42,7 @@ const CardM = (props: { image: string | undefined; title: string; text: string; 
     };
 
     return (
-        <div className="block w-4/12 min-h-[350px] px-2">
+        <div className="block w-full md:w-4/12 min-h-[350px] px-2 mb-5 md:mb-0">
             <div className="flex flex-col w-full h-full border-2 rounded-[25px] p-4 text-left">
                 {!imageLoaded && <PlaceholderImage />}
                 <img
@@ -66,7 +66,7 @@ function Projects() {
         <>
             <div className="article-section mt-[100px] gradient-purple-br">
                 <h1 className="underline-purple mb-12" id="pres">Mes projets</h1>
-                <div className="flex flex-row w-7/12 justify-between">
+                <div className="flex flex-col md:flex-row w-10/12 md:w-7/12 justify-between">
                     <CardM image={Punch} title="Punch" text="Application mobile de partage de musique entre amis." info="Projet en cours de développement">
                         <Tile text="Flutter" color="#4271E9"></Tile>
                         <Tile text="Firebase" color="#F4C009"></Tile>

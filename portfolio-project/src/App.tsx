@@ -11,8 +11,8 @@ function App() {
     <>
       <Layout>
         <Hero></Hero>
-        {/* <AboutMe></AboutMe> */}
-        {/* <Projects></Projects> */}
+        <AboutMe></AboutMe>
+        <Projects></Projects>
         {/* <Skills></Skills> */}
       </Layout>
     </>

@@ -34,7 +34,7 @@ function AboutMe() {
 const Experience = () => {
     return (
         <>
-            <div className="flex flex-col w-full md:w-6/12 text-left mb-10 md:mb-0">
+            <div className="flex flex-col w-full md:w-6/12 text-left">
                 <h3 className="lexend-giga text-2xl tracking-[-3px] tracking-tighter mb-10">Experience</h3>
                 <div className="flex flex-row">
                     <div className="flex flex-col">
