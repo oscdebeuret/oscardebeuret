@@ -2,7 +2,7 @@ function Skills() {
     return (
         <>
             <div className="article-section mb-20 gradient-purple-tr">
-                <h1 className="underline-purple mb-12 mt-24 md:text-[35px] text-[30px] " id="pres">Mes compétences</h1>
+                <h1 className="underline-purple mb-12 mt-24 md:text-[35px] text-[30px] " id="comp">Mes compétences</h1>
                 <p className="lexend-giga font-bold text-[20px] tracking-tighter mb-5">
                     Langages
                 </p>
@@ -107,7 +107,7 @@ const TileSkill = (props: { text: string; color: string }) => {
 
     function hexToRgb(hex: string) {
         const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-        hex = hex.replace(shorthandRegex, (m, r, g, b) => r + r + g + g + b + b);
+        hex = hex.replace(shorthandRegex, (r, g, b) => r + r + g + g + b + b);
         const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
         return result ? [
             parseInt(result[1], 16),

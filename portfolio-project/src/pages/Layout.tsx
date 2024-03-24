@@ -1,5 +1,11 @@
-import PhotoProfil from '../assets/photo.webp'
-import MenuBurger from '../assets/menu-burger.png'
+import PhotoProfil from '../assets/icones/photo.webp'
+import Memoji from '../assets/icones/memoji.png'
+import FlagFrance from '../assets/icones/flag-france.png'
+import Telecharger from '../assets/icones/telechargement-de-fichier.png'
+import Linkedin from '../assets/icones/LinkedIn.png'
+import MenuBurger from '../assets/icones/menu-burger.png'
+import CV from '../assets/CV.pdf'
+
 import { useEffect, useState } from 'react';
 
 interface ModalProps {
@@ -75,11 +81,11 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:flex flex-row gap-x-12 place-content-around poppins font-semibold">
                 <a href="#pres">Présentation</a>
-                <a href="#">Projets</a>
-                <a href="#">Compétences</a>
+                <a href="#proj">Projets</a>
+                <a href="#comp">Compétences</a>
             </div>
             <div className="hidden sm:flex place-self-right align-items-center h-full">
-                <button type="button" className="montserrat text-white font-semibold bg-black rounded-full px-5 py-3 w-50">Contactez moi</button>
+                <a type="button" href="#contact" className="montserrat text-white font-semibold bg-black rounded-full px-5 py-3 w-50">Contactez moi</a>
             </div>
 
             <Modal isOpen={isModalOpen} onClose={closeModal} />
@@ -90,7 +96,26 @@ const Navbar = () => {
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="flex flex-row justify-center">
+            <div className="container mb-[150px]">
+                <h1 className="underline-purple before:z-10 z-20 mb-12 mt-24 md:text-[35px] text-[30px]" id="contact">Contactez moi</h1>
+                <img src={Memoji} alt="memoji" className="w-44"/>
+                <a href="tel:+33769271582" className="flex flex-row p-5 px-10 mb-5 bg-white rounded-full w-[450px]">
+                    <img src={FlagFrance} alt="" className="w-12"/>
+                    <p className="lexend-giga text-[35px] ms-3">07.69.27.15.82</p>
+                </a>
+                <a href="mailto:debeuret.oscar@gmail.com" className="flex flex-row p-5 px-10 mb-5 bg-white rounded-full w-[450px]">
+                    <p className="lexend-giga text-[20px] tracking-tighter ">debeuret.oscar@gmail.com</p>
+                </a>
+                <a href={CV} className="flex flex-row p-5 px-10 mb-10 bg-white rounded-full justify-between items-center w-[450px]">
+                    <p className="lexend-giga text-[20px] tracking-tighter">Téléchargez mon CV</p>
+                    <img src={Telecharger} alt="" className="w-8 h-8"/>
+                </a>
+                <a href="https://www.linkedin.com/in/oscar-debeuret-35113b215/" className="flex flex-row p-5 mb-44 bg-white rounded-full items-center">
+                    <img src={Linkedin} alt="" className="w-8 h-8"/>
+                </a>
+                <p className="poppins font-medium">©Copyright 2022 - Oscar Debeuret. Tous droits réservés.</p>
+            </div>
         </footer>
     )
 }

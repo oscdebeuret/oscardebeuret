@@ -1,7 +1,7 @@
-import PhotoProfil from '../assets/photo.webp';
-import Ub from '../assets/ub.webp'
-import Daguin from '../assets/daguin.webp'
-import Bewease from '../assets/bewease.webp'
+import PhotoProfil from '../assets/icones/photo.webp';
+import Ub from '../assets/icones/ub.webp'
+import Daguin from '../assets/icones/daguin.webp'
+import Bewease from '../assets/icones/bewease.webp'
 
 function AboutMe() {
     return (

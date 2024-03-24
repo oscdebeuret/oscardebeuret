@@ -1,4 +1,4 @@
-import WavingHandSVG from '../assets/waving-hand.webp';
+import WavingHandSVG from '../assets/icones/waving-hand.webp';
 
 function Hero() {
     return (

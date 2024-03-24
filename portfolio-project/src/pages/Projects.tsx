@@ -1,4 +1,9 @@
-import Punch from "../assets/punch.png";
+import Punch from "../assets/projets/punch.png";
+import Netfloux from "../assets/projets/netfloux.png";
+import Portoflio from "../assets/projets/portfolio.png";
+import RTSport from "../assets/projets/rtsport.png";
+import PongJeu from "../assets/projets/pong-jeu.png";
+import Lowatem from "../assets/projets/lowatem.png";
 import { useState } from 'react';
 
 const Tile = (props: { text: string; color: string }) => {
@@ -9,7 +14,7 @@ const Tile = (props: { text: string; color: string }) => {
 
     function hexToRgb(hex: string) {
         const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-        hex = hex.replace(shorthandRegex, (m, r, g, b) => r + r + g + g + b + b);
+        hex = hex.replace(shorthandRegex, (r, g, b) => r + r + g + g + b + b);
         const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
         return result ? [
             parseInt(result[1], 16),
@@ -65,15 +70,48 @@ function Projects() {
     return (
         <>
             <div className="article-section mt-[100px] gradient-purple-br">
-                <h1 className="underline-purple mb-12" id="pres">Mes projets</h1>
-                <div className="flex flex-col md:flex-row w-10/12 md:w-7/12 justify-between">
+                <h1 className="underline-purple mb-12" id="proj">Mes projets</h1>
+                <div className="flex flex-col md:flex-row w-10/12 md:w-7/12 justify-between mb-5">
                     <CardM image={Punch} title="Punch" text="Application mobile de partage de musique entre amis." info="Projet en cours de développement">
                         <Tile text="Flutter" color="#4271E9"></Tile>
                         <Tile text="Firebase" color="#F4C009"></Tile>
                         <Tile text="Figma" color="#9747FF"></Tile>
+                        <Tile text="API Spotify" color="#4CB944"></Tile>
+                        <Tile text="UX/UI Design" color="#EB9BC1"></Tile>
                     </CardM>
-                    <CardM image={""} title="" text=""></CardM>
-                    <CardM image={""} title="" text=""></CardM>
+                    <CardM image={Netfloux} title="Netfloux" text="Applicaton web de geston de séries. Projet d’équipe.">
+                        <Tile text="Symfony" color="#4271E9"></Tile>
+                        <Tile text="PHP" color="#4271E9"></Tile>
+                        <Tile text="Figma" color="#9747FF"></Tile>
+                        <Tile text="HTML CSS" color="#4CB944"></Tile>
+                        <Tile text="TailwindCSS" color="#4CB944"></Tile>
+                        <Tile text="SCRUM" color="#EB9BC1"></Tile>
+                    </CardM>
+                    <CardM image={Portoflio} title="Portoflio" text="Réalisation de mon site web portfolio.">
+                        <Tile text="HTML CSS" color="#4CB944"></Tile>
+                        <Tile text="React" color="#4CB944"></Tile>
+                        <Tile text="Vite" color="#9747FF"></Tile>
+                        <Tile text="TailwindCSS" color="#9747FF"></Tile>
+                        <Tile text="Figma" color="#9747FF"></Tile>
+                    </CardM>
+                </div>
+                <div className="flex flex-col md:flex-row w-10/12 md:w-7/12 justify-between">
+                    <CardM image={RTSport} title="Site vitrine" text="Réalisation d'un site vitrine d'une entreprise fictive.">
+                        <Tile text="HTML CSS" color="#4CB944"></Tile>
+                        <Tile text="Bootstrap" color="#4CB944"></Tile>
+                        <Tile text="Figma" color="#9747FF"></Tile>
+                    </CardM>
+                    <CardM image={Lowatem} title="Lowatem" text="Réalisation d'un jeu de plateau avec règles spécifiques et d'une IA.">
+                        <Tile text="IA" color="#4271E9"></Tile>
+                        <Tile text="Java" color="#4271E9"></Tile>
+                        <Tile text="Orienté Objet" color="#9747FF"></Tile>
+                        <Tile text="Algorithmie" color="#4CB944"></Tile>
+                    </CardM>
+                    <CardM image={PongJeu} title="Jeu Pong" text="Réalisation du jeu pong avec processing.">
+                        <Tile text="Processing" color="#4271E9"></Tile>
+                        <Tile text="Algorithmie" color="#F4C009"></Tile>
+                        <Tile text="Orienté Objet" color="#9747FF"></Tile>
+                    </CardM>
                 </div>
             </div>
         </>
