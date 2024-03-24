@@ -7,22 +7,25 @@ function AboutMe() {
     return (
         <>
             <div className="article-section gradient-blue-tr">
-                <h1 className="underline-purple mb-10" id="pres">Présentation</h1>
-                <div className="flex flex-row w-7/12 justify-between">
-                    <div className="flex flex-col w-8/12 border-2 p-5 py-7 rounded-3xl pe-12">
-                        <p className="poppins text-xl text-left font-medium mb-5 leading-8">Étudiant en 3ème année à l’IUT Informatique de Bordeaux, actuellement en alternance chez bewease.</p>
-                        <p className="poppins text-xl text-left font-medium leading-8">J’aime monter des <span className="underline-violet px-2">projets</span> informatiques innovants et <span className="underline-violet px-2">créatifs</span>. Découvrez mes projets sur ce portfolio.</p>
-                    </div>
-                    <div className="flex w-4/12 justify-center align-center">
-                        <div className="grid content-center">
-                            <img src={PhotoProfil} alt="Photo" className="w-64 rounded-full"></img>
+                <div className="flex flex-col container">
+                    <h1 className="underline-purple mb-10" id="pres">Présentation</h1>
+                    <div className="flex md:flex-row md:justify-between md:items-start flex-col align-center justify-center items-center">
+                        <div className="flex flex-col w-7/12 border-2 p-5 py-7 rounded-3xl lg:pe-12 ">
+                            <p className="poppins text-xl text-left font-medium mb-5 leading-8">Étudiant en 3ème année à l’IUT Informatique de Bordeaux, actuellement en alternance chez bewease.</p>
+                            <p className="poppins text-xl text-left font-medium leading-8">J’aime monter des <span className="underline-violet px-2">projets</span> informatiques innovants et <span className="underline-violet px-2">créatifs</span>. Découvrez mes projets sur ce portfolio.</p>
+                        </div>
+                        <div className="flex w-4/12 justify-center align-center mb-10">
+                            <div className="grid content-center">
+                                <img src={PhotoProfil} alt="Photo" className="w-64 rounded-full"></img>
+                            </div>
                         </div>
                     </div>
+                    <div className="flex flex-row w-fulljustify-between mt-16">
+                        <Formation></Formation>
+                        <Experience></Experience>
+                    </div>
                 </div>
-                <div className="flex flex-row w-7/12 justify-between mt-16">
-                    <Formation></Formation>
-                    <Experience></Experience>
-                </div>
+                
             </div>
         </>
     )
