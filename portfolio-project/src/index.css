@@ -20,6 +20,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -27,7 +30,6 @@ body {
   padding: 0;
   display: flex;
   place-items: center;
-  scroll-behavior: smooth;
 }
 
 /* Fonts  */
@@ -59,7 +61,7 @@ h1 {
   font-weight: 800;
   letter-spacing: -5px;
   position: relative;
-  width:fit-content
+  width: fit-content
 }
 
 .underline-purple {
@@ -134,12 +136,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} 
+}
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   .container {
     width: 90%;
-  } 
+  }
 }
 
 
