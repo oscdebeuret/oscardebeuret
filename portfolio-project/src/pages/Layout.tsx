@@ -100,7 +100,6 @@ const Footer = () => {
             <div className="container mb-[150px]">
                 <h1 className="underline-purple before:z-10 z-20 mb-5 mt-24 md:text-[35px] text-[30px]" id="contact">Contactez moi</h1>
                 <img src={Memoji} alt="memoji" className="w-44" />
-                {/* <ContactForm></ContactForm> */}
                 <div className="flex flex-col md:flex-row gap-5 items-center bg-white rounded-2xl p-5">
                     <a href="https://www.linkedin.com/in/oscar-debeuret-35113b215/">
                         <FaLinkedin className="text-3xl" />
@@ -121,7 +120,7 @@ const Footer = () => {
                         <HiPhone className="text-l" />
                     </a>
                 </div>
-                <p className="poppins font-medium text-gray-400">©Copyright 2024 - Oscar Debeuret. Tous droits réservés.</p>
+                <p className="poppins font-medium text-gray-400 text-center">©Copyright 2024 - Oscar Debeuret. Tous droits réservés.</p>
             </div>
         </footer>
     )

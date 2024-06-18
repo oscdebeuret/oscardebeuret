@@ -30,6 +30,11 @@ body {
   padding: 0;
   display: flex;
   place-items: center;
+
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Fonts  */
@@ -93,7 +98,7 @@ h1 {
   text-align: center;
   align-items: center;
 
-  background-image: radial-gradient(circle at top left, rgba(151, 71, 255, 0.4) 0%, transparent 400px), radial-gradient(circle at bottom right, rgba(0, 153, 153, 0.4) 0%, transparent 400px);
+
 }
 
 .article-section {
@@ -103,30 +108,6 @@ h1 {
   flex-direction: column;
   text-align: center;
   align-items: center;
-}
-
-.gradient-blue-tr {
-  background-image: radial-gradient(circle at top right, rgba(0, 153, 153, 0.4) 0%, transparent 400px);
-}
-
-.gradient-blue-br {
-  background-image: radial-gradient(circle at bottom right, rgba(0, 153, 153, 0.4) 0%, transparent 400px);
-}
-
-.gradient-purple-br {
-  background-image: radial-gradient(circle at bottom right, rgba(151, 71, 255, 0.4) 0%, transparent 400px);
-}
-
-.gradient-purple-tl {
-  background-image: radial-gradient(circle at top left, tail('colors.purple') 0%, transparent 400px);
-}
-
-.gradient-purple-tr {
-  background-image: radial-gradient(circle at top right, rgba(151, 71, 255, 0.4) 0%, transparent 400px);
-}
-
-.gradient-purple-bl {
-  background-image: radial-gradient(circle at bottom left, rgba(151, 71, 255, 0.4) 0%, transparent 400px);
 }
 
 

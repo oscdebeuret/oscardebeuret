@@ -25,7 +25,7 @@ const Tile = (props: { text: string; color: string }) => {
 
     return (
         <>
-            <div style={tileStyle} className="flex justify-center align-center py-1 px-3 me-1 mb-2 rounded-full bg-opacity-20">
+            <div style={tileStyle} className="flex justify-center align-center py-1 px-3 me-1 mb-2 rounded-[6px] bg-opacity-20">
                 <p className="poppins text-[12px] font-semibold">{props.text}</p>
             </div >
         </>
@@ -48,7 +48,7 @@ const CardM = (props: { image: string | undefined; title: string; text: string; 
 
     return (
         <div className="block w-full md:w-4/12 min-h-[350px] px-2 mb-5 md:mb-0">
-            <div className="flex flex-col w-full h-full border-2 rounded-[25px] p-4 text-left">
+            <div className="flex flex-col w-full h-full rounded-[25px] bg-white p-4 text-left">
                 {!imageLoaded && <PlaceholderImage />}
                 <img
                     src={props.image}
@@ -87,7 +87,7 @@ function Projects() {
                         <Tile text="TailwindCSS" color="#4CB944"></Tile>
                         <Tile text="SCRUM" color="#EB9BC1"></Tile>
                     </CardM>
-                    <CardM image={Portoflio} title="Portoflio" text="Réalisation de mon site web portfolio.">
+                    <CardM image={Portoflio} title="Portfolio" text="Réalisation de mon site web portfolio.">
                         <Tile text="HTML CSS" color="#4CB944"></Tile>
                         <Tile text="React" color="#4CB944"></Tile>
                         <Tile text="Vite" color="#9747FF"></Tile>

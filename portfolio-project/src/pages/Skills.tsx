@@ -1,8 +1,8 @@
 function Skills() {
     return (
         <>
-            <div className="article-section mb-20 gradient-purple-tr">
-                <h1 className="underline-purple mb-12 mt-24 md:text-[35px] text-[30px] " id="comp">Mes compétences</h1>
+            <div className="article-section bg-white mt-20 py-20 gradient-purple-tr">
+                <h1 className="underline-purple mb-12 md:text-[35px] text-[30px] " id="comp">Mes compétences</h1>
                 <p className="lexend-giga font-bold text-[20px] tracking-tighter mb-5">
                     Langages
                 </p>
@@ -118,7 +118,7 @@ const TileSkill = (props: { text: string; color: string }) => {
 
     return (
         <>
-            <div style={tileStyle} className="flex justify-center align-center py-1 px-3 me-1 mb-2 rounded-lg bg-opacity-20">
+            <div style={tileStyle} className="flex justify-center align-center py-1 px-3 me-1 mb-2 rounded-sm bg-opacity-20">
                 <p className="poppins text-[16px] font-semibold">{props.text}</p>
             </div >
         </>
