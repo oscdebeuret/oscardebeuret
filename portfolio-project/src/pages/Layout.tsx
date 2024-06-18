@@ -1,4 +1,4 @@
-import PhotoProfil from '../assets/icones/photo.webp'
+import PhotoProfil from '../assets/icones/photo.png'
 import Memoji from '../assets/icones/memoji.png'
 import CV from '../assets/CV.pdf'
 
