@@ -2,7 +2,6 @@ import PhotoProfil from '../assets/icones/photo.webp';
 import Ub from '../assets/icones/ub.webp'
 import Daguin from '../assets/icones/daguin.webp'
 import Bewease from '../assets/icones/bewease.webp'
-import { IoIosInformationCircle } from 'react-icons/io';
 
 function AboutMe() {
     return (
